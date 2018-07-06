@@ -1,0 +1,16 @@
+; generate the fibonacci sequence
+LDI 0
+STA 20
+LDI 1
+STA 21
+; add
+LDA 21
+ADD 20
+OUT
+STA 22
+LDA 21
+STA 20
+LDA 22
+STA 21
+JMP 3
+
