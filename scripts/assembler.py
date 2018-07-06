@@ -3,7 +3,7 @@ Assembler for the CPU
 
 Generates a hex file from an assembly file
 
-There are two type of instructions:
+There are two formats of instructions:
 
 type1:
     MNEMONIC OPERAND
