@@ -80,15 +80,15 @@ for line in lines:
     if len(tokens) == 0:
         continue
     elif len(tokens) == 1:
-        if tokens[0] not in type_2.keys():
+        if tokens[0].upper() not in type_2.keys():
             raise AssemblerError(line_number, "Invalid syntax")
-        data += (type_2[tokens[0]] + "000 ")
+        data += (type_2[tokens[0].upper()] + "000 ")
     elif len(tokens) == 2:
-        if tokens[0] not in type_1.keys():
+        if tokens[0].upper() not in type_1.keys():
             raise AssemblerError(line_number, "Invalid syntax")
         if not tokens[1].isdigit() or int(tokens[1]) >= (2 ** 12):
             raise AssemblerError(line_number, "Invalid syntax")
-        data += (type_1[tokens[0]] + formatter(tokens[1]) + " ")
+        data += (type_1[tokens[0].upper()] + formatter(tokens[1]) + " ")
     else:
         raise AssemblerError(line_number, "Invalid syntax")
     line_number += 1
