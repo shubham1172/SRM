@@ -73,18 +73,21 @@ file.close()
 data = "v2.0 raw\n"
 
 for line in lines:
+    line = line.split(';')[0].strip()
+    if line == "":
+        continue
     tokens = line.split(' ')
     if len(tokens) == 0:
         continue
     elif len(tokens) == 1:
         if tokens[0] not in type_2.keys():
-            raise AssemblerError(line_number, "Invalid syntax 1")
+            raise AssemblerError(line_number, "Invalid syntax")
         data += (type_2[tokens[0]] + "000 ")
     elif len(tokens) == 2:
         if tokens[0] not in type_1.keys():
-            raise AssemblerError(line_number, "Invalid syntax 2")
+            raise AssemblerError(line_number, "Invalid syntax")
         if not tokens[1].isdigit() or int(tokens[1]) >= (2 ** 12):
-            raise AssemblerError(line_number, "Invalid syntax 3")
+            raise AssemblerError(line_number, "Invalid syntax")
         data += (type_1[tokens[0]] + formatter(tokens[1]) + " ")
     else:
         raise AssemblerError(line_number, "Invalid syntax")
