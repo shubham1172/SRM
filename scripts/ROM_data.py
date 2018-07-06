@@ -4,10 +4,9 @@ This file generates the hex file for the Control Unit ROM
 ROM has 7 lines for address and 16 for data
 
 ROM address layout:
-A0-A3: instruction decoder
-A4-A6: microcode counter
+A0-A2: microcode counter
+A3-A6: instruction decoder
 
-We have a total of 6 cycles per instruction.
 """
 
 """
@@ -66,10 +65,10 @@ def formatter(item):
 
 for instruction in data:
     for word in instruction:
-        x = ''.join(map(formatter, [(word & 0xf000)>> 12,
-                                    (word & 0xf00) >> 8,
-                                    (word & 0xf0) >> 4,
-                                    (word & 0xf)]))
-        file.write(x + " ")
+        nibbles = ''.join(map(formatter, [(word & 0xf000)>> 12,
+                                          (word & 0xf00) >> 8,
+                                          (word & 0xf0) >> 4,
+                                          (word & 0xf)]))
+        file.write(nibbles + " ")
 
 file.close()
