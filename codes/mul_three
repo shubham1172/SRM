@@ -1,6 +1,7 @@
-LDI 3
-STA 15
-LDI 0
-ADD 15
-OUT
-JMP 3
+; generate multiples of three
+LDI 3   ; load 3
+STA 15  ; store at address 15
+LDI 0   ; load 0
+ADD 15  ; add stuff from address 15
+OUT     ; output
+JMP 3   ; jump back to address 3
