@@ -1,0 +1,9 @@
+; countdown
+LDI 1
+STA 20
+LDI 10
+OUT
+SUB 20
+JZ 7
+JMP 3
+HLT
