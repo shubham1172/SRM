@@ -198,7 +198,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(590,300)" to="(630,300)"/>
     <wire from="(450,230)" to="(450,250)"/>
     <wire from="(290,660)" to="(290,740)"/>
-    <wire from="(90,590)" to="(90,610)"/>
     <wire from="(670,290)" to="(770,290)"/>
     <wire from="(170,110)" to="(170,130)"/>
     <wire from="(210,710)" to="(210,730)"/>
@@ -403,6 +402,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(590,390)" to="(630,390)"/>
     <wire from="(610,270)" to="(610,360)"/>
     <wire from="(280,660)" to="(280,740)"/>
+    <wire from="(80,590)" to="(80,610)"/>
     <wire from="(10,530)" to="(50,530)"/>
     <wire from="(230,660)" to="(230,690)"/>
     <wire from="(190,700)" to="(190,730)"/>
@@ -422,6 +422,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(200,250)" to="(330,250)"/>
     <wire from="(550,380)" to="(560,380)"/>
     <wire from="(620,370)" to="(630,370)"/>
+    <comp lib="0" loc="(80,610)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="MCR"/>
+    </comp>
     <comp lib="0" loc="(170,110)" name="Tunnel">
       <a name="facing" val="south"/>
       <a name="label" val="FR"/>
@@ -611,10 +615,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="16"/>
       <a name="label" val="Sum"/>
       <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(90,610)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="MCR"/>
     </comp>
     <comp lib="4" loc="(120,700)" name="Register">
       <a name="width" val="1"/>
