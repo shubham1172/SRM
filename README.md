@@ -23,6 +23,7 @@ SRM has a clean and simple architecture. A 16-bit bus runs through the center an
 |15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
 | HLT | MI | RI | RO | IO | II | AI | AO | EO | SU | BI | OI | CE | CO | J | - |
+
 Detailed description is available in the [microcodes.py](scripts/microcodes.py) file.
 
 ### Flags
@@ -33,10 +34,12 @@ Detailed description is available in the [microcodes.py](scripts/microcodes.py) 
 
 ### Microcodes
 The ROM has 9 address lines which map to a data space of 64 bytes. The address lines are:
-* A0-A3: microcode counter
-* A4-A6: instruction decoder
-* A7: zero bit
-* A8: carry bit
+|Bits|Input|
+|--|--|
+|A0-A3|microcode counter|
+|A4-A6|instruction decoder|
+|A7|zero bit|
+|A8|carry bit|
 
 ### Instruction Set
 
