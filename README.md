@@ -34,6 +34,7 @@ Detailed description is available in the [microcodes.py](scripts/microcodes.py) 
 
 ### Microcodes
 The ROM has 9 address lines which map to a data space of 64 bytes. The address lines are:
+
 |Bits|Input|
 |--|--|
 |A0-A3|microcode counter|
