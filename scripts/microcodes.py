@@ -33,7 +33,7 @@ J = 0b0000000000000010      # Jump
 
 FETCH = [CO|MI, RO|II|CE]
 """
-RAM content
+ROM content
 """
 base_data = [
     [*FETCH, 0, 0, 0, 0, 0, 0],                 # 0000 - NOP
