@@ -2,7 +2,7 @@
   
 <h1 align="center"> Simple RISC Machine </h1>    
     
-SRM is a Turing complete 16-bit RISC CPU based on the Harvard architecture. It is inspired by the SAP processor by Albert Paul Malvino and Ben Eater's <a href="https://eater.net/8bit">8-bit computer</a>. It is created using <a href="http://www.cburch.com/logisim/">Logisim</a>.  
+SRM is a Turing complete 16-bit RISC CPU based on the Von Neumann architecture. It is inspired by the SAP processor by Albert Paul Malvino and Ben Eater's <a href="https://eater.net/8bit">8-bit computer</a>. It is created using <a href="http://www.cburch.com/logisim/">Logisim</a>.  
     
 <p align="center">    
     <img src="./docs/images/circuit.png" alt="circuit.png"/>    
