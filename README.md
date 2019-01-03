@@ -20,17 +20,17 @@ SRM is a Turing complete 16-bit RISC CPU based on the Von Neumann architecture. 
 * CU - created using Microcode ROM   
   
 ### Control word  
-|15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |  
+|15|14|13|12|11|10|9|8|7|6|5|4|3|2|1|0|  
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|  
-| HLT | MI | RI | RO | IO | II | AI | AO | EO | SU | BI | OI | CE | CO | J | - |  
+|HLT|MI|RI|RO|IO|II|AI|AO|EO|SU|BI|OI|CE|CO|J|-|  
   
 Detailed description is available in the [microcodes.py](scripts/microcodes.py) file.  
   
 ### Flags  
-|#| Abbreviation | Description |  
+|#|Abbreviation|Description|  
 |--|--|--|  
-|0| C | Carry Flag |  
-|1| Z | Zero Flag |  
+|0|C|Carry Flag|  
+|1|Z|Zero Flag|  
   
 ### Microcodes  
 The ROM has 9 address lines which map to a data space of 64 bytes. The address lines are:  
