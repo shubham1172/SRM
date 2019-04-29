@@ -83,9 +83,6 @@ HLT
 The above program counts from 10 to 0 and outputs to the out register.
 
 The assembled code can be then loaded in RAM and executed using the logisim interface. 
-
-I will upload a sample video soon. 
-
   
-### Up next  
+### Future work  
 * Cycle optimisation for instructions
